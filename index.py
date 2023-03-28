@@ -13,7 +13,7 @@ root.geometry("400x300")
 # root.maxsize(800,800)
 root.configure(background='white')
 
-df = pd.read_csv("./Tkinter/data.csv")
+df = pd.read_csv("data.csv")
 
 # cell_val = df.iloc[3][1]
 
@@ -30,7 +30,7 @@ def cal():
 
 
 # Load the background image
-bg_image = Image.open("./Tkinter/farmer2.jpg")
+bg_image = Image.open("farmer2.jpg")
 bg_image = bg_image.resize((1500, 1200), Image.ANTIALIAS)
 bg_image = ImageTk.PhotoImage(bg_image)
 
@@ -55,7 +55,7 @@ crop_label.place(relx=0.1, rely=0.5, relheight=0.1)
 # crop_entry = ttk.Entry(frame,)
 # crop_entry.place(relx=0.3, rely=0.5, relwidth=0.5, relheight=0.1)
 options = []
-with open('./Tkinter/data.csv') as file:
+with open('data.csv') as file:
     reader = csv.reader(file)
     for row in reader:
         options.append(row[1]) # assuming the desired column is the first one
