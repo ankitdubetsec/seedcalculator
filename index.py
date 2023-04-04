@@ -14,7 +14,7 @@ root.geometry("400x300")
 root.configure(background='white')
 
 df = pd.read_csv("data.csv")
-
+# x=4
 # cell_val = df.iloc[3][1]
 
 # Set the "Crop" column as the index
